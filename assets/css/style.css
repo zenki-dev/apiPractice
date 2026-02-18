@@ -1,0 +1,295 @@
+* {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0a0a0f;
+        background-image:
+          radial-gradient(
+            ellipse at 20% 20%,
+            rgba(120, 60, 20, 0.15) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse at 80% 80%,
+            rgba(40, 20, 80, 0.2) 0%,
+            transparent 50%
+          ),
+          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        min-height: 100vh;
+        font-family: "Crimson Pro", Georgia, serif;
+        color: #d4c5a0;
+      }
+      .font-display {
+        font-family: "Cinzel", serif;
+      }
+      .divider {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 8px 0;
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #8b6914,
+          transparent
+        );
+      }
+      .divider-gem {
+        width: 6px;
+        height: 6px;
+        background: #c9941a;
+        transform: rotate(45deg);
+        box-shadow: 0 0 8px #c9941a80;
+      }
+      .panel {
+        background: linear-gradient(
+          135deg,
+          rgba(20, 16, 10, 0.95) 0%,
+          rgba(15, 12, 20, 0.95) 100%
+        );
+        border: 1px solid rgba(139, 105, 20, 0.3);
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+      }
+      .panel::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 4px;
+        padding: 1px;
+        background: linear-gradient(
+          135deg,
+          rgba(201, 148, 26, 0.4),
+          transparent 40%,
+          transparent 60%,
+          rgba(201, 148, 26, 0.2)
+        );
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+      .corner-accent {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-color: #c9941a;
+        border-style: solid;
+        opacity: 0.6;
+      }
+      .corner-tl {
+        top: 6px;
+        left: 6px;
+        border-width: 1px 0 0 1px;
+      }
+      .corner-tr {
+        top: 6px;
+        right: 6px;
+        border-width: 1px 1px 0 0;
+      }
+      .corner-bl {
+        bottom: 6px;
+        left: 6px;
+        border-width: 0 0 1px 1px;
+      }
+      .corner-br {
+        bottom: 6px;
+        right: 6px;
+        border-width: 0 1px 1px 0;
+      }
+      .rpg-input {
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(139, 105, 20, 0.35);
+        border-radius: 3px;
+        color: #d4c5a0;
+        padding: 10px 14px;
+        font-family: "Crimson Pro", serif;
+        font-size: 1rem;
+        width: 100%;
+        transition: all 0.2s;
+        outline: none;
+      }
+      .rpg-input::placeholder {
+        color: #6b5a3a;
+      }
+      .rpg-input:focus {
+        border-color: #c9941a;
+        background: rgba(201, 148, 26, 0.05);
+        box-shadow: 0 0 12px rgba(201, 148, 26, 0.15);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #8b5e0a, #c9941a);
+        border: 1px solid #c9941a;
+        color: #0a0a0f;
+        font-family: "Cinzel", serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #c9941a, #f0b830);
+        box-shadow: 0 0 16px rgba(201, 148, 26, 0.4);
+        transform: translateY(-1px);
+      }
+      .btn-primary:active {
+        transform: translateY(0);
+      }
+      .btn-secondary {
+        background: transparent;
+        border: 1px solid rgba(139, 105, 20, 0.5);
+        color: #c9941a;
+        font-family: "Cinzel", serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .btn-secondary:hover {
+        background: rgba(201, 148, 26, 0.1);
+        border-color: #c9941a;
+        box-shadow: 0 0 10px rgba(201, 148, 26, 0.2);
+      }
+      .btn-danger {
+        background: linear-gradient(135deg, #6b0a0a, #c9241a);
+        border: 1px solid #c9241a;
+        color: #fff0f0;
+        font-family: "Cinzel", serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .btn-danger:hover {
+        background: linear-gradient(135deg, #c9241a, #ff4030);
+        box-shadow: 0 0 16px rgba(201, 36, 26, 0.5);
+        transform: translateY(-1px);
+      }
+      .btn-danger:active {
+        transform: translateY(0);
+      }
+      .section-label {
+        font-family: "Cinzel", serif;
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #8b6914;
+        margin-bottom: 10px;
+      }
+      .result-card {
+        background: rgba(201, 148, 26, 0.05);
+        border: 1px solid rgba(201, 148, 26, 0.2);
+        border-radius: 3px;
+        padding: 14px 18px;
+        margin-top: 12px;
+        font-size: 1rem;
+        line-height: 1.8;
+        animation: fadeIn 0.3s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .stat-label {
+        color: #8b6914;
+        font-size: 0.85rem;
+      }
+      .stat-value {
+        color: #f0d080;
+        font-weight: 600;
+      }
+      .tab-btn {
+        font-family: "Cinzel", serif;
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(139, 105, 20, 0.2);
+        color: #6b5a3a;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .tab-btn.active,
+      .tab-btn:hover {
+        background: rgba(201, 148, 26, 0.1);
+        color: #c9941a;
+        border-color: rgba(201, 148, 26, 0.4);
+      }
+      .tab-btn.danger-tab:hover,
+      .tab-btn.danger-tab.active {
+        background: rgba(201, 36, 26, 0.1);
+        color: #c9241a;
+        border-color: rgba(201, 36, 26, 0.4);
+      }
+      .hidden {
+        display: none !important;
+      }
+      .glow-text {
+        text-shadow:
+          0 0 30px rgba(201, 148, 26, 0.4),
+          0 0 60px rgba(201, 148, 26, 0.15);
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .form-grid .full-width {
+        grid-column: 1 / -1;
+      }
+      @media (max-width: 640px) {
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .form-grid .full-width {
+          grid-column: 1;
+        }
+      }
+      .warning-box {
+        background: rgba(201, 36, 26, 0.05);
+        border: 1px solid rgba(201, 36, 26, 0.25);
+        border-radius: 3px;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+        color: #c9816a;
+      }
+      .warning-box span {
+        font-family: "Cinzel", serif;
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        color: #c9241a;
+        display: block;
+        margin-bottom: 4px;
+      }

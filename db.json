@@ -1,0 +1,1831 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "username": "DragonSlayer99",
+      "email": "dragonslayer@example.com",
+      "level": 45,
+      "experience": 125000,
+      "gold": 15420,
+      "characterId": 1,
+      "guildId": 1,
+      "createdAt": "2024-01-15T08:30:00Z",
+      "lastLogin": "2026-02-10T14:25:00Z"
+    },
+    {
+      "id": "2",
+      "username": "MysticMage",
+      "email": "mysticmage@example.com",
+      "level": 38,
+      "experience": 89500,
+      "gold": 9800,
+      "characterId": 2,
+      "guildId": 1,
+      "createdAt": "2024-03-22T12:15:00Z",
+      "lastLogin": "2026-02-09T19:45:00Z"
+    },
+    {
+      "id": "3",
+      "username": "ShadowRogue",
+      "email": "shadowrogue@example.com",
+      "level": 42,
+      "experience": 105000,
+      "gold": 22100,
+      "characterId": 3,
+      "guildId": 2,
+      "createdAt": "2024-02-10T09:00:00Z",
+      "lastLogin": "2026-02-10T10:30:00Z"
+    },
+    {
+      "id": "4",
+      "username": "HolyPaladin",
+      "email": "holypaladin@example.com",
+      "level": 40,
+      "experience": 98000,
+      "gold": 11250,
+      "characterId": 4,
+      "guildId": 1,
+      "createdAt": "2024-04-05T16:20:00Z",
+      "lastLogin": "2026-02-10T13:10:00Z"
+    },
+    {
+      "id": "5",
+      "username": "NatureRanger",
+      "email": "natureranger@example.com",
+      "level": 36,
+      "experience": 78000,
+      "gold": 8900,
+      "characterId": 5,
+      "guildId": 2,
+      "createdAt": "2024-05-18T11:45:00Z",
+      "lastLogin": "2026-02-08T20:15:00Z"
+    },
+    {
+      "id": "6",
+      "username": "test1",
+      "email": "test@gmail.com",
+      "level": 1,
+      "experience": 0,
+      "gold": 1000,
+      "characterId": 1,
+      "guildId": 0,
+      "createdAt": "2026-02-18T06:39:32.489Z",
+      "lastLogin": "2026-02-18T06:39:32.489Z"
+    }
+  ],
+  "characters": [
+    {
+      "id": "1",
+      "name": "Thorin Ironforge",
+      "class": "Warrior",
+      "race": "Dwarf",
+      "health": 2500,
+      "maxHealth": 2500,
+      "mana": 300,
+      "maxMana": 300,
+      "strength": 85,
+      "agility": 45,
+      "intelligence": 30,
+      "vitality": 90,
+      "currentLocationId": 3
+    },
+    {
+      "id": "2",
+      "name": "Elara Moonwhisper",
+      "class": "Mage",
+      "race": "Elf",
+      "health": 1200,
+      "maxHealth": 1200,
+      "mana": 2800,
+      "maxMana": 2800,
+      "strength": 25,
+      "agility": 55,
+      "intelligence": 95,
+      "vitality": 40,
+      "currentLocationId": 1
+    },
+    {
+      "id": "3",
+      "name": "Kael Shadowstep",
+      "class": "Rogue",
+      "race": "Human",
+      "health": 1800,
+      "maxHealth": 1800,
+      "mana": 800,
+      "maxMana": 800,
+      "strength": 60,
+      "agility": 92,
+      "intelligence": 50,
+      "vitality": 55,
+      "currentLocationId": 5
+    },
+    {
+      "id": "4",
+      "name": "Seraphina Lightbringer",
+      "class": "Paladin",
+      "race": "Human",
+      "health": 2200,
+      "maxHealth": 2200,
+      "mana": 1500,
+      "maxMana": 1500,
+      "strength": 70,
+      "agility": 50,
+      "intelligence": 65,
+      "vitality": 75,
+      "currentLocationId": 2
+    },
+    {
+      "id": "5",
+      "name": "Aria Wildshot",
+      "class": "Ranger",
+      "race": "Half-Elf",
+      "health": 1600,
+      "maxHealth": 1600,
+      "mana": 1000,
+      "maxMana": 1000,
+      "strength": 55,
+      "agility": 88,
+      "intelligence": 60,
+      "vitality": 50,
+      "currentLocationId": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "name": "Silverkeep City",
+      "type": "City",
+      "description": "A bustling medieval city with towering stone walls and a grand castle at its center. Merchants, guards, and adventurers fill the streets.",
+      "region": "Central Kingdom",
+      "dangerLevel": 1,
+      "connectedLocations": [
+        2,
+        3,
+        4
+      ],
+      "npcs": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "shops": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Whispering Woods",
+      "type": "Forest",
+      "description": "An ancient forest where the trees seem to whisper secrets. Sunlight barely penetrates the dense canopy overhead.",
+      "region": "Northern Wilderness",
+      "dangerLevel": 3,
+      "connectedLocations": [
+        1,
+        4,
+        6
+      ],
+      "npcs": [
+        4,
+        9
+      ],
+      "shops": []
+    },
+    {
+      "id": "3",
+      "name": "Ironpeak Mines",
+      "type": "Dungeon",
+      "description": "Deep underground mines that have been overrun by monsters. Precious ores and ancient artifacts are rumored to be hidden within.",
+      "region": "Eastern Mountains",
+      "dangerLevel": 5,
+      "connectedLocations": [
+        1,
+        7
+      ],
+      "npcs": [
+        5
+      ],
+      "shops": []
+    },
+    {
+      "id": "4",
+      "name": "Sunhaven Village",
+      "type": "Village",
+      "description": "A peaceful farming village surrounded by golden wheat fields. The locals are friendly but concerned about recent monster sightings.",
+      "region": "Southern Plains",
+      "dangerLevel": 2,
+      "connectedLocations": [
+        1,
+        2,
+        5
+      ],
+      "npcs": [
+        6,
+        10
+      ],
+      "shops": [
+        4
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Shadow's Edge Tavern",
+      "type": "Tavern",
+      "description": "A dimly lit tavern on the outskirts of civilization where adventurers gather to share stories and find work.",
+      "region": "Border Territories",
+      "dangerLevel": 2,
+      "connectedLocations": [
+        4,
+        8
+      ],
+      "npcs": [
+        7,
+        11
+      ],
+      "shops": [
+        5
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Moonlit Glade",
+      "type": "Sacred Site",
+      "description": "A serene clearing in the forest where ancient druids once performed rituals. The area glows with soft moonlight even during the day.",
+      "region": "Northern Wilderness",
+      "dangerLevel": 4,
+      "connectedLocations": [
+        2
+      ],
+      "npcs": [
+        12
+      ],
+      "shops": []
+    },
+    {
+      "id": "7",
+      "name": "Dragon's Lair",
+      "type": "Boss Area",
+      "description": "A massive cavern deep within the mountains where the ancient dragon Pyraxis is said to slumber atop a mountain of treasure.",
+      "region": "Eastern Mountains",
+      "dangerLevel": 10,
+      "connectedLocations": [
+        3
+      ],
+      "npcs": [
+        13
+      ],
+      "shops": []
+    },
+    {
+      "id": "8",
+      "name": "Cursed Swamp",
+      "type": "Swamp",
+      "description": "A fog-covered swamp filled with poisonous plants and undead creatures. Few who enter ever return.",
+      "region": "Western Marshlands",
+      "dangerLevel": 7,
+      "connectedLocations": [
+        5
+      ],
+      "npcs": [],
+      "shops": []
+    }
+  ],
+  "npcs": [
+    {
+      "id": "1",
+      "name": "Captain Marcus",
+      "role": "Quest Giver",
+      "locationId": 1,
+      "dialogue": "Greetings, adventurer! The city needs brave souls like you. I have urgent matters that require attention.",
+      "questsAvailable": [
+        1,
+        2
+      ],
+      "faction": "City Guard",
+      "isHostile": false
+    },
+    {
+      "id": "2",
+      "name": "Merchant Tobias",
+      "role": "Shopkeeper",
+      "locationId": 1,
+      "dialogue": "Welcome to my shop! I have the finest goods in all the kingdom.",
+      "questsAvailable": [],
+      "faction": "Merchants Guild",
+      "isHostile": false
+    },
+    {
+      "id": "3",
+      "name": "Archmage Aldric",
+      "role": "Trainer",
+      "locationId": 1,
+      "dialogue": "The path of magic is long and difficult, but I can teach you its secrets... for a price.",
+      "questsAvailable": [
+        5
+      ],
+      "faction": "Mage Circle",
+      "isHostile": false
+    },
+    {
+      "id": "4",
+      "name": "Elven Scout Lyria",
+      "role": "Quest Giver",
+      "locationId": 2,
+      "dialogue": "The forest is in danger. Dark forces gather in the shadows, and we need help to stop them.",
+      "questsAvailable": [
+        3
+      ],
+      "faction": "Forest Guardians",
+      "isHostile": false
+    },
+    {
+      "id": "5",
+      "name": "Dwarven Foreman Grimbeard",
+      "role": "Quest Giver",
+      "locationId": 3,
+      "dialogue": "The mines were once our pride, now they're crawling with beasts! Help us reclaim what's ours!",
+      "questsAvailable": [
+        4
+      ],
+      "faction": "Mining Company",
+      "isHostile": false
+    },
+    {
+      "id": "6",
+      "name": "Farmer Johnathan",
+      "role": "Quest Giver",
+      "locationId": 4,
+      "dialogue": "My crops are being destroyed by monsters every night. Please, help us!",
+      "questsAvailable": [
+        6
+      ],
+      "faction": "Villagers",
+      "isHostile": false
+    },
+    {
+      "id": "7",
+      "name": "Innkeeper Mara",
+      "role": "Shopkeeper",
+      "locationId": 5,
+      "dialogue": "Come in, come in! Rest your weary bones and hear the latest tales from travelers.",
+      "questsAvailable": [
+        7
+      ],
+      "faction": "Neutral",
+      "isHostile": false
+    },
+    {
+      "id": "8",
+      "name": "Blacksmith Thorne",
+      "role": "Shopkeeper",
+      "locationId": 1,
+      "dialogue": "Need a weapon forged or armor repaired? You've come to the right place!",
+      "questsAvailable": [],
+      "faction": "Craftsmen Guild",
+      "isHostile": false
+    },
+    {
+      "id": "9",
+      "name": "Mysterious Stranger",
+      "role": "Quest Giver",
+      "locationId": 2,
+      "dialogue": "Sssh... I have information about a great treasure, but it comes at a cost.",
+      "questsAvailable": [
+        8
+      ],
+      "faction": "Unknown",
+      "isHostile": false
+    },
+    {
+      "id": "10",
+      "name": "Village Elder",
+      "role": "Quest Giver",
+      "locationId": 4,
+      "dialogue": "Welcome, traveler. Our village has stood for generations, but dark times are upon us.",
+      "questsAvailable": [
+        9
+      ],
+      "faction": "Villagers",
+      "isHostile": false
+    },
+    {
+      "id": "11",
+      "name": "Bounty Board",
+      "role": "Quest Board",
+      "locationId": 5,
+      "dialogue": "Various wanted posters and quest notices are pinned to this board.",
+      "questsAvailable": [
+        10,
+        11
+      ],
+      "faction": "Neutral",
+      "isHostile": false
+    },
+    {
+      "id": "12",
+      "name": "Druid Whisperwind",
+      "role": "Trainer",
+      "locationId": 6,
+      "dialogue": "Nature speaks to those who listen. I can teach you its language.",
+      "questsAvailable": [
+        12
+      ],
+      "faction": "Druid Circle",
+      "isHostile": false
+    },
+    {
+      "id": "13",
+      "name": "Pyraxis the Ancient",
+      "role": "Boss",
+      "locationId": 7,
+      "dialogue": "You dare enter my domain, mortal? Your courage will be your downfall!",
+      "questsAvailable": [],
+      "faction": "Dragons",
+      "isHostile": true
+    }
+  ],
+  "quests": [
+    {
+      "id": "1",
+      "title": "Rat Infestation",
+      "description": "Clear out the giant rats in the city sewers.",
+      "questGiverId": 1,
+      "level": 5,
+      "type": "Elimination",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Kill 10 Giant Rats",
+          "progress": 0,
+          "target": 10,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 500,
+        "gold": 250,
+        "items": [
+          1,
+          15
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "2",
+      "title": "Bandit Trouble",
+      "description": "Deal with the bandits attacking travelers on the northern road.",
+      "questGiverId": 1,
+      "level": 15,
+      "type": "Elimination",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Defeat Bandit Leader",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Defeat Bandits",
+          "progress": 0,
+          "target": 5,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 2000,
+        "gold": 800,
+        "items": [
+          5,
+          20
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "3",
+      "title": "Save the Sacred Grove",
+      "description": "Corrupted treants are destroying the ancient grove. Stop them before it's too late.",
+      "questGiverId": 4,
+      "level": 25,
+      "type": "Elimination",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Cleanse the Sacred Grove",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Defeat Corrupted Treants",
+          "progress": 0,
+          "target": 8,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 5000,
+        "gold": 1500,
+        "items": [
+          8,
+          22
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "4",
+      "title": "Reclaim the Mines",
+      "description": "The Ironpeak Mines have been overrun by goblins. Clear them out and recover the mining equipment.",
+      "questGiverId": 5,
+      "level": 30,
+      "type": "Dungeon",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Clear the Mine Entrance",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Defeat the Goblin King",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 3,
+          "description": "Recover Mining Equipment",
+          "progress": 0,
+          "target": 5,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 8000,
+        "gold": 2500,
+        "items": [
+          3,
+          11,
+          25
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "5",
+      "title": "The Mage's Test",
+      "description": "Prove your magical prowess by completing Archmage Aldric's challenges.",
+      "questGiverId": 3,
+      "level": 20,
+      "type": "Trial",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Complete the Trial of Fire",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Complete the Trial of Ice",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 3,
+          "description": "Complete the Trial of Lightning",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 4000,
+        "gold": 1000,
+        "items": [
+          10,
+          24
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "6",
+      "title": "Protect the Harvest",
+      "description": "Guard the village fields from monster attacks during the night.",
+      "questGiverId": 6,
+      "level": 12,
+      "type": "Defense",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Survive 3 Waves of Monsters",
+          "progress": 0,
+          "target": 3,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 1500,
+        "gold": 600,
+        "items": [
+          16,
+          21
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "7",
+      "title": "Lost Heirloom",
+      "description": "Innkeeper Mara's grandmother's necklace was stolen by a thief who fled into the swamp.",
+      "questGiverId": 7,
+      "level": 35,
+      "type": "Retrieval",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Track down the Thief",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Retrieve the Necklace",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 7000,
+        "gold": 2000,
+        "items": [
+          14
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "8",
+      "title": "The Hidden Treasure",
+      "description": "Follow the mysterious stranger's map to find an ancient treasure.",
+      "questGiverId": 9,
+      "level": 28,
+      "type": "Exploration",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Decipher the Ancient Map",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Find the Treasure Location",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        },
+        {
+          "id": 3,
+          "description": "Defeat the Guardian",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 6000,
+        "gold": 5000,
+        "items": [
+          7,
+          12,
+          26
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "9",
+      "title": "The Elder's Wisdom",
+      "description": "Gather rare herbs from dangerous locations to help the village elder create a protective ward.",
+      "questGiverId": 10,
+      "level": 18,
+      "type": "Collection",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Collect Moonpetal Flowers",
+          "progress": 0,
+          "target": 5,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Collect Dragon's Breath Herbs",
+          "progress": 0,
+          "target": 3,
+          "completed": false
+        },
+        {
+          "id": 3,
+          "description": "Collect Shadow Root",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 3000,
+        "gold": 900,
+        "items": [
+          17,
+          18,
+          19
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "10",
+      "title": "Wanted: Direwolf Pack",
+      "description": "A pack of direwolves has been terrorizing the countryside. Eliminate them for a bounty.",
+      "questGiverId": 11,
+      "level": 22,
+      "type": "Bounty",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Slay Direwolves",
+          "progress": 0,
+          "target": 12,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Slay the Alpha Direwolf",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 4500,
+        "gold": 1800,
+        "items": [
+          6,
+          23
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "11",
+      "title": "Wanted: Desert Scorpion Queen",
+      "description": "An enormous scorpion has made its nest in the southern desert. High bounty for its elimination.",
+      "questGiverId": 11,
+      "level": 40,
+      "type": "Bounty",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Defeat the Scorpion Queen",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 10000,
+        "gold": 4000,
+        "items": [
+          4,
+          13,
+          27
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    },
+    {
+      "id": "12",
+      "title": "Balance of Nature",
+      "description": "The natural balance has been disrupted. Help the druids restore harmony to the land.",
+      "questGiverId": 12,
+      "level": 32,
+      "type": "Ritual",
+      "objectives": [
+        {
+          "id": 1,
+          "description": "Collect Essence of the Elements",
+          "progress": 0,
+          "target": 4,
+          "completed": false
+        },
+        {
+          "id": 2,
+          "description": "Perform the Ritual of Balance",
+          "progress": 0,
+          "target": 1,
+          "completed": false
+        }
+      ],
+      "rewards": {
+        "experience": 8500,
+        "gold": 2200,
+        "items": [
+          9,
+          28
+        ]
+      },
+      "status": "Available",
+      "prerequisites": []
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "name": "Iron Sword",
+      "type": "Weapon",
+      "subtype": "Sword",
+      "rarity": "Common",
+      "level": 1,
+      "damage": 15,
+      "durability": 100,
+      "maxDurability": 100,
+      "value": 50,
+      "weight": 3.5,
+      "description": "A basic iron sword. Reliable but unremarkable.",
+      "attributes": {
+        "strength": 2
+      },
+      "requirements": {
+        "level": 1,
+        "strength": 10
+      }
+    },
+    {
+      "id": "2",
+      "name": "Steel Longsword",
+      "type": "Weapon",
+      "subtype": "Sword",
+      "rarity": "Uncommon",
+      "level": 15,
+      "damage": 42,
+      "durability": 150,
+      "maxDurability": 150,
+      "value": 350,
+      "weight": 4.2,
+      "description": "A well-crafted steel longsword with a balanced blade.",
+      "attributes": {
+        "strength": 8,
+        "criticalChance": 5
+      },
+      "requirements": {
+        "level": 15,
+        "strength": 30
+      }
+    },
+    {
+      "id": "3",
+      "name": "Dragonforged Greatsword",
+      "type": "Weapon",
+      "subtype": "Greatsword",
+      "rarity": "Legendary",
+      "level": 50,
+      "damage": 180,
+      "durability": 300,
+      "maxDurability": 300,
+      "value": 15000,
+      "weight": 8.5,
+      "description": "Forged in dragonfire, this massive blade radiates with ancient power.",
+      "attributes": {
+        "strength": 35,
+        "vitality": 20,
+        "criticalDamage": 50,
+        "fireDamage": 25
+      },
+      "requirements": {
+        "level": 50,
+        "strength": 85
+      }
+    },
+    {
+      "id": "4",
+      "name": "Venomstrike Daggers",
+      "type": "Weapon",
+      "subtype": "Daggers",
+      "rarity": "Epic",
+      "level": 40,
+      "damage": 95,
+      "durability": 120,
+      "maxDurability": 120,
+      "value": 8500,
+      "weight": 1.8,
+      "description": "Twin daggers coated with a deadly poison. Strikes quickly and lethally.",
+      "attributes": {
+        "agility": 30,
+        "criticalChance": 25,
+        "poisonDamage": 40
+      },
+      "requirements": {
+        "level": 40,
+        "agility": 70
+      }
+    },
+    {
+      "id": "5",
+      "name": "Oaken Staff",
+      "type": "Weapon",
+      "subtype": "Staff",
+      "rarity": "Common",
+      "level": 5,
+      "damage": 20,
+      "durability": 80,
+      "maxDurability": 80,
+      "value": 100,
+      "weight": 2.5,
+      "description": "A simple wooden staff imbued with minor magical properties.",
+      "attributes": {
+        "intelligence": 5,
+        "mana": 50
+      },
+      "requirements": {
+        "level": 5,
+        "intelligence": 15
+      }
+    },
+    {
+      "id": "6",
+      "name": "Hunter's Bow",
+      "type": "Weapon",
+      "subtype": "Bow",
+      "rarity": "Uncommon",
+      "level": 20,
+      "damage": 55,
+      "durability": 100,
+      "maxDurability": 100,
+      "value": 450,
+      "weight": 2,
+      "description": "A finely crafted bow favored by skilled hunters.",
+      "attributes": {
+        "agility": 12,
+        "criticalChance": 10
+      },
+      "requirements": {
+        "level": 20,
+        "agility": 40
+      }
+    },
+    {
+      "id": "7",
+      "name": "Arcane Scepter",
+      "type": "Weapon",
+      "subtype": "Scepter",
+      "rarity": "Rare",
+      "level": 30,
+      "damage": 70,
+      "durability": 150,
+      "maxDurability": 150,
+      "value": 2500,
+      "weight": 1.5,
+      "description": "A scepter crackling with arcane energy. Increases spell power significantly.",
+      "attributes": {
+        "intelligence": 25,
+        "mana": 200,
+        "spellPower": 15
+      },
+      "requirements": {
+        "level": 30,
+        "intelligence": 60
+      }
+    },
+    {
+      "id": "8",
+      "name": "Leather Armor",
+      "type": "Armor",
+      "subtype": "Light Armor",
+      "rarity": "Common",
+      "level": 1,
+      "defense": 10,
+      "durability": 100,
+      "maxDurability": 100,
+      "value": 40,
+      "weight": 5,
+      "description": "Basic leather armor providing minimal protection.",
+      "attributes": {
+        "vitality": 3
+      },
+      "requirements": {
+        "level": 1
+      }
+    },
+    {
+      "id": "9",
+      "name": "Druid's Vestments",
+      "type": "Armor",
+      "subtype": "Robe",
+      "rarity": "Epic",
+      "level": 35,
+      "defense": 45,
+      "durability": 180,
+      "maxDurability": 180,
+      "value": 6000,
+      "weight": 2.5,
+      "description": "Robes woven from enchanted natural fibers. Grants the wearer nature's blessing.",
+      "attributes": {
+        "intelligence": 20,
+        "vitality": 15,
+        "mana": 300,
+        "natureResistance": 30
+      },
+      "requirements": {
+        "level": 35,
+        "intelligence": 55
+      }
+    },
+    {
+      "id": "10",
+      "name": "Mage's Robe of Wisdom",
+      "type": "Armor",
+      "subtype": "Robe",
+      "rarity": "Rare",
+      "level": 25,
+      "defense": 30,
+      "durability": 120,
+      "maxDurability": 120,
+      "value": 1800,
+      "weight": 2,
+      "description": "Blue robes adorned with mystical runes that enhance magical abilities.",
+      "attributes": {
+        "intelligence": 18,
+        "mana": 150,
+        "spellPower": 10
+      },
+      "requirements": {
+        "level": 25,
+        "intelligence": 50
+      }
+    },
+    {
+      "id": "11",
+      "name": "Plate Armor of the Mountain",
+      "type": "Armor",
+      "subtype": "Heavy Armor",
+      "rarity": "Epic",
+      "level": 40,
+      "defense": 120,
+      "durability": 300,
+      "maxDurability": 300,
+      "value": 9500,
+      "weight": 25,
+      "description": "Massive plate armor that makes the wearer as immovable as a mountain.",
+      "attributes": {
+        "strength": 20,
+        "vitality": 40,
+        "defense": 30
+      },
+      "requirements": {
+        "level": 40,
+        "strength": 70
+      }
+    },
+    {
+      "id": "12",
+      "name": "Ring of Fire Resistance",
+      "type": "Accessory",
+      "subtype": "Ring",
+      "rarity": "Rare",
+      "level": 20,
+      "defense": 0,
+      "durability": 999,
+      "maxDurability": 999,
+      "value": 1200,
+      "weight": 0.1,
+      "description": "A ruby ring that protects the wearer from flames.",
+      "attributes": {
+        "fireResistance": 40
+      },
+      "requirements": {
+        "level": 20
+      }
+    },
+    {
+      "id": "13",
+      "name": "Amulet of the Scorpion",
+      "type": "Accessory",
+      "subtype": "Amulet",
+      "rarity": "Epic",
+      "level": 35,
+      "defense": 0,
+      "durability": 999,
+      "maxDurability": 999,
+      "value": 5500,
+      "weight": 0.2,
+      "description": "An amulet shaped like a scorpion. Grants immunity to poison and the ability to poison enemies.",
+      "attributes": {
+        "poisonResistance": 100,
+        "poisonDamage": 30,
+        "agility": 10
+      },
+      "requirements": {
+        "level": 35
+      }
+    },
+    {
+      "id": "14",
+      "name": "Grandmother's Locket",
+      "type": "Accessory",
+      "subtype": "Amulet",
+      "rarity": "Rare",
+      "level": 10,
+      "defense": 0,
+      "durability": 999,
+      "maxDurability": 999,
+      "value": 800,
+      "weight": 0.1,
+      "description": "An old family heirloom that brings good fortune to its bearer.",
+      "attributes": {
+        "luck": 15,
+        "experience": 10
+      },
+      "requirements": {
+        "level": 10
+      }
+    },
+    {
+      "id": "15",
+      "name": "Health Potion",
+      "type": "Consumable",
+      "subtype": "Potion",
+      "rarity": "Common",
+      "level": 1,
+      "value": 25,
+      "weight": 0.5,
+      "stackSize": 99,
+      "description": "Restores 100 health points.",
+      "effect": {
+        "type": "heal",
+        "amount": 100
+      }
+    },
+    {
+      "id": "16",
+      "name": "Greater Health Potion",
+      "type": "Consumable",
+      "subtype": "Potion",
+      "rarity": "Uncommon",
+      "level": 15,
+      "value": 75,
+      "weight": 0.5,
+      "stackSize": 99,
+      "description": "Restores 350 health points.",
+      "effect": {
+        "type": "heal",
+        "amount": 350
+      }
+    },
+    {
+      "id": "17",
+      "name": "Mana Potion",
+      "type": "Consumable",
+      "subtype": "Potion",
+      "rarity": "Common",
+      "level": 1,
+      "value": 30,
+      "weight": 0.5,
+      "stackSize": 99,
+      "description": "Restores 80 mana points.",
+      "effect": {
+        "type": "mana",
+        "amount": 80
+      }
+    },
+    {
+      "id": "18",
+      "name": "Greater Mana Potion",
+      "type": "Consumable",
+      "subtype": "Potion",
+      "rarity": "Uncommon",
+      "level": 15,
+      "value": 85,
+      "weight": 0.5,
+      "stackSize": 99,
+      "description": "Restores 280 mana points.",
+      "effect": {
+        "type": "mana",
+        "amount": 280
+      }
+    },
+    {
+      "id": "19",
+      "name": "Elixir of Strength",
+      "type": "Consumable",
+      "subtype": "Elixir",
+      "rarity": "Rare",
+      "level": 20,
+      "value": 200,
+      "weight": 0.3,
+      "stackSize": 20,
+      "description": "Increases strength by 20 for 10 minutes.",
+      "effect": {
+        "type": "buff",
+        "stat": "strength",
+        "amount": 20,
+        "duration": 600
+      }
+    },
+    {
+      "id": "20",
+      "name": "Scroll of Teleportation",
+      "type": "Consumable",
+      "subtype": "Scroll",
+      "rarity": "Rare",
+      "level": 10,
+      "value": 150,
+      "weight": 0.2,
+      "stackSize": 10,
+      "description": "Instantly teleports you to the nearest town.",
+      "effect": {
+        "type": "teleport",
+        "destination": "nearestTown"
+      }
+    },
+    {
+      "id": "21",
+      "name": "Food Ration",
+      "type": "Consumable",
+      "subtype": "Food",
+      "rarity": "Common",
+      "level": 1,
+      "value": 5,
+      "weight": 1,
+      "stackSize": 99,
+      "description": "Basic travel food. Restores 50 health slowly over time.",
+      "effect": {
+        "type": "healOverTime",
+        "amount": 50,
+        "duration": 30
+      }
+    },
+    {
+      "id": "22",
+      "name": "Moonstone",
+      "type": "Material",
+      "subtype": "Gem",
+      "rarity": "Rare",
+      "level": 1,
+      "value": 500,
+      "weight": 0.2,
+      "stackSize": 99,
+      "description": "A luminescent gem that glows with pale moonlight. Used in crafting magical items."
+    },
+    {
+      "id": "23",
+      "name": "Dire Wolf Pelt",
+      "type": "Material",
+      "subtype": "Animal Part",
+      "rarity": "Uncommon",
+      "level": 1,
+      "value": 120,
+      "weight": 2,
+      "stackSize": 50,
+      "description": "The thick fur of a direwolf. Can be crafted into warm armor."
+    },
+    {
+      "id": "24",
+      "name": "Tome of Lightning",
+      "type": "Skill Book",
+      "subtype": "Spell",
+      "rarity": "Rare",
+      "level": 25,
+      "value": 2000,
+      "weight": 1,
+      "stackSize": 1,
+      "description": "Teaches the spell 'Chain Lightning' when used. Requires 50 Intelligence.",
+      "effect": {
+        "type": "learnSpell",
+        "spellId": 5
+      }
+    },
+    {
+      "id": "25",
+      "name": "Mining Pick",
+      "type": "Tool",
+      "subtype": "Gathering",
+      "rarity": "Common",
+      "level": 1,
+      "value": 50,
+      "weight": 4,
+      "stackSize": 1,
+      "description": "A sturdy pickaxe for mining ore and minerals.",
+      "durability": 200,
+      "maxDurability": 200
+    },
+    {
+      "id": "26",
+      "name": "Ancient Coin",
+      "type": "Quest Item",
+      "subtype": "Collectible",
+      "rarity": "Rare",
+      "level": 1,
+      "value": 0,
+      "weight": 0.1,
+      "stackSize": 99,
+      "description": "An old coin from a forgotten civilization. Might be valuable to collectors."
+    },
+    {
+      "id": "27",
+      "name": "Scorpion Stinger",
+      "type": "Material",
+      "subtype": "Monster Part",
+      "rarity": "Epic",
+      "level": 1,
+      "value": 800,
+      "weight": 1.5,
+      "stackSize": 20,
+      "description": "The venomous stinger of a giant scorpion. Highly sought after by alchemists."
+    },
+    {
+      "id": "28",
+      "name": "Seed of the Worldtree",
+      "type": "Quest Item",
+      "subtype": "Special",
+      "rarity": "Legendary",
+      "level": 1,
+      "value": 0,
+      "weight": 0.5,
+      "stackSize": 1,
+      "description": "A sacred seed from the mythical Worldtree. Pulses with life energy."
+    }
+  ],
+  "inventory": [
+    {
+      "id": "1",
+      "playerId": 1,
+      "itemId": 3,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "mainHand"
+    },
+    {
+      "id": "2",
+      "playerId": 1,
+      "itemId": 11,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "chest"
+    },
+    {
+      "id": "3",
+      "playerId": 1,
+      "itemId": 15,
+      "quantity": 12,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "4",
+      "playerId": 1,
+      "itemId": 17,
+      "quantity": 8,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "5",
+      "playerId": 2,
+      "itemId": 7,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "mainHand"
+    },
+    {
+      "id": "6",
+      "playerId": 2,
+      "itemId": 10,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "chest"
+    },
+    {
+      "id": "7",
+      "playerId": 2,
+      "itemId": 24,
+      "quantity": 1,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "8",
+      "playerId": 2,
+      "itemId": 16,
+      "quantity": 5,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "9",
+      "playerId": 2,
+      "itemId": 18,
+      "quantity": 15,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "10",
+      "playerId": 3,
+      "itemId": 4,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "mainHand"
+    },
+    {
+      "id": "11",
+      "playerId": 3,
+      "itemId": 8,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "chest"
+    },
+    {
+      "id": "12",
+      "playerId": 3,
+      "itemId": 13,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "amulet"
+    },
+    {
+      "id": "13",
+      "playerId": 3,
+      "itemId": 20,
+      "quantity": 3,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "14",
+      "playerId": 4,
+      "itemId": 2,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "mainHand"
+    },
+    {
+      "id": "15",
+      "playerId": 4,
+      "itemId": 12,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "ring"
+    },
+    {
+      "id": "16",
+      "playerId": 4,
+      "itemId": 16,
+      "quantity": 10,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "17",
+      "playerId": 5,
+      "itemId": 6,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "mainHand"
+    },
+    {
+      "id": "18",
+      "playerId": 5,
+      "itemId": 9,
+      "quantity": 1,
+      "isEquipped": true,
+      "slot": "chest"
+    },
+    {
+      "id": "19",
+      "playerId": 5,
+      "itemId": 21,
+      "quantity": 25,
+      "isEquipped": false,
+      "slot": null
+    },
+    {
+      "id": "20",
+      "playerId": 1,
+      "itemId": 22,
+      "quantity": 3,
+      "isEquipped": false,
+      "slot": null
+    }
+  ],
+  "guilds": [
+    {
+      "id": "1",
+      "name": "Knights of the Silver Dawn",
+      "tag": "KSD",
+      "level": 12,
+      "memberCount": 45,
+      "maxMembers": 50,
+      "experience": 245000,
+      "gold": 125000,
+      "description": "A prestigious guild dedicated to protecting the innocent and upholding justice.",
+      "leader": 1,
+      "officers": [
+        2,
+        4
+      ],
+      "createdAt": "2024-01-20T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Shadow Syndicate",
+      "tag": "SS",
+      "level": 10,
+      "memberCount": 32,
+      "maxMembers": 40,
+      "experience": 180000,
+      "gold": 98000,
+      "description": "Masters of stealth and subterfuge. We work in the shadows.",
+      "leader": 3,
+      "officers": [
+        5
+      ],
+      "createdAt": "2024-02-14T14:30:00Z"
+    }
+  ],
+  "shops": [
+    {
+      "id": "1",
+      "name": "General Goods",
+      "type": "General Store",
+      "locationId": 1,
+      "npcId": 2,
+      "inventory": [
+        {
+          "itemId": 15,
+          "stock": 999,
+          "price": 25
+        },
+        {
+          "itemId": 17,
+          "stock": 999,
+          "price": 30
+        },
+        {
+          "itemId": 21,
+          "stock": 999,
+          "price": 5
+        },
+        {
+          "itemId": 20,
+          "stock": 50,
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "The Forge",
+      "type": "Blacksmith",
+      "locationId": 1,
+      "npcId": 8,
+      "inventory": [
+        {
+          "itemId": 1,
+          "stock": 20,
+          "price": 50
+        },
+        {
+          "itemId": 2,
+          "stock": 10,
+          "price": 350
+        },
+        {
+          "itemId": 8,
+          "stock": 15,
+          "price": 40
+        },
+        {
+          "itemId": 25,
+          "stock": 30,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Arcane Emporium",
+      "type": "Magic Shop",
+      "locationId": 1,
+      "npcId": 3,
+      "inventory": [
+        {
+          "itemId": 5,
+          "stock": 8,
+          "price": 100
+        },
+        {
+          "itemId": 10,
+          "stock": 3,
+          "price": 1800
+        },
+        {
+          "itemId": 18,
+          "stock": 999,
+          "price": 85
+        },
+        {
+          "itemId": 24,
+          "stock": 2,
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Village Market",
+      "type": "General Store",
+      "locationId": 4,
+      "npcId": 6,
+      "inventory": [
+        {
+          "itemId": 15,
+          "stock": 999,
+          "price": 28
+        },
+        {
+          "itemId": 16,
+          "stock": 500,
+          "price": 80
+        },
+        {
+          "itemId": 21,
+          "stock": 999,
+          "price": 6
+        },
+        {
+          "itemId": 19,
+          "stock": 30,
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Shadow's Edge Tavern",
+      "type": "Inn",
+      "locationId": 5,
+      "npcId": 7,
+      "inventory": [
+        {
+          "itemId": 21,
+          "stock": 999,
+          "price": 8
+        },
+        {
+          "itemId": 15,
+          "stock": 200,
+          "price": 30
+        },
+        {
+          "itemId": 17,
+          "stock": 150,
+          "price": 35
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": "1",
+      "name": "First Blood",
+      "description": "Defeat your first enemy",
+      "category": "Combat",
+      "points": 10,
+      "rewardGold": 100,
+      "rewardExperience": 50,
+      "isSecret": false
+    },
+    {
+      "id": "2",
+      "name": "Treasure Hunter",
+      "description": "Collect 1000 gold",
+      "category": "Wealth",
+      "points": 20,
+      "rewardGold": 500,
+      "rewardExperience": 100,
+      "isSecret": false
+    },
+    {
+      "id": "3",
+      "name": "Dragon Slayer",
+      "description": "Defeat Pyraxis the Ancient",
+      "category": "Boss",
+      "points": 100,
+      "rewardGold": 5000,
+      "rewardExperience": 10000,
+      "isSecret": false
+    },
+    {
+      "id": "4",
+      "name": "Master Explorer",
+      "description": "Discover all locations",
+      "category": "Exploration",
+      "points": 50,
+      "rewardGold": 2000,
+      "rewardExperience": 5000,
+      "isSecret": false
+    },
+    {
+      "id": "5",
+      "name": "The Chosen One",
+      "description": "Reach level 50",
+      "category": "Progression",
+      "points": 75,
+      "rewardGold": 3000,
+      "rewardExperience": 0,
+      "isSecret": false
+    },
+    {
+      "id": "6",
+      "name": "Mysterious Benefactor",
+      "description": "Find the hidden treasure cache",
+      "category": "Secret",
+      "points": 30,
+      "rewardGold": 1000,
+      "rewardExperience": 2000,
+      "isSecret": true
+    }
+  ],
+  "playerAchievements": [
+    {
+      "id": "1",
+      "playerId": 1,
+      "achievementId": 1,
+      "unlockedAt": "2024-01-15T09:15:00Z",
+      "progress": 100
+    },
+    {
+      "id": "2",
+      "playerId": 1,
+      "achievementId": 2,
+      "unlockedAt": "2024-02-20T14:30:00Z",
+      "progress": 100
+    },
+    {
+      "id": "3",
+      "playerId": 1,
+      "achievementId": 3,
+      "unlockedAt": "2025-12-10T20:45:00Z",
+      "progress": 100
+    },
+    {
+      "id": "4",
+      "playerId": 2,
+      "achievementId": 1,
+      "unlockedAt": "2024-03-22T13:00:00Z",
+      "progress": 100
+    },
+    {
+      "id": "5",
+      "playerId": 3,
+      "achievementId": 1,
+      "unlockedAt": "2024-02-10T10:20:00Z",
+      "progress": 100
+    },
+    {
+      "id": "6",
+      "playerId": 3,
+      "achievementId": 2,
+      "unlockedAt": "2024-04-15T16:00:00Z",
+      "progress": 100
+    }
+  ]
+}
